@@ -177,6 +177,10 @@ resource "aws_instance" "web_server" {
               systemctl enable apache2
               systemctl start apache2
 
+              # Remove default Apache index.html
+              rm -f /var/www/html/index.html
+              a2enmod php*
+
               # Simple PHP app to connect to RDS
               cat <<EOPHP > /var/www/html/index.php
               <?php
