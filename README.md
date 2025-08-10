@@ -16,15 +16,15 @@ This project provisions a **3-tier AWS infrastructure** using Terraform:
 - AWS CLI configured (`aws configure`)
 
 ### Steps
-i. git clone https://github.com/<your-username>/aws-3tier-terraform.git
-ii. cd aws-3tier-terraform
-iii. terraform init
-iv. terraform plan
-v. terraform apply
+1. git clone https://github.com/<your-username>/aws-3tier-terraform.git
+2. cd aws-3tier-terraform
+3. terraform init
+4. terraform plan
+5. terraform apply
 
 ## Access
-i. Open the ALB DNS in your browser
-ii.You should see: "Connected successfully to RDS!"
+1. Open the ALB DNS in your browser
+2. You should see: "Connected successfully to RDS!"
 
 ## What You'll Learn
 1. Setting up VPC, subnets, and routing
